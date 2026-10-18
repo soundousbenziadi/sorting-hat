@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* Hogwarts-inspired palette */
+  --color-background: #171923;
+  --color-foreground: #f2e6c9;
+
+  --color-primary: #740f2d;
+  --color-secondary: #c5a45d;
+  --color-accent: #4a6741;
+  --color-section: #222332;
+
+  /* Supporting colors */
+  --color-surface: #2b2b3b;
+  --color-surface-hover: #36364a;
+  --color-border: #514653;
+  --color-muted: #b5acb8;
+
+  --color-parchment: #f2e6c9;
+  --color-gold: #c5a45d;
+
+  /* Hogwarts houses */
+  --color-department1: #740f2d;
+  --color-department2: #4a6741;
+  --color-department3: #28466b;
+  --color-department4: #d5a62e;
+
+  /* Typography */
+  --font-heading: "Cinzel", "IBM Plex Sans Arabic", serif;
+  --font-body: "Inter", "IBM Plex Sans Arabic", sans-serif;
+  --font-arabic: "IBM Plex Sans Arabic", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  :lang(ar) {
+    font-family: var(--font-arabic);
+    line-height: 1.9;
+  }
+
+  p,
+  span,
+  li,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+  }
+
+  :lang(ar) h1,
+  :lang(ar) h2,
+  :lang(ar) h3,
+  :lang(ar) h4 {
+    font-family: var(--font-arabic);
+    font-weight: 700;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font-size: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--color-secondary);
+    color: var(--color-background);
+  }
+}
