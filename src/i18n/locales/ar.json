@@ -1,5 +1,33 @@
 {
-  "welcome": "مرحبًا بك في هوجورتس",
-  "subtitle": "اكتشف القسم الذي يناسب سحرك",
-  "start": "ابدأ رحلتك"
+  "hat": {
+    "title": "قبعة الفرز الخاصة بـ SESC",
+    "subtitle": "أخبر القبعة عن نفسك وستجد مكانك.",
+    "placeholder": "اهمس بجوابك للقبعة…",
+    "send": "إرسال",
+    "thinking": "القبعة تفكّر…",
+    "error": "سحر القبعة متعب. حاول مرة أخرى.",
+    "retry": "إعادة المحاولة",
+    "next": "فرز الطالب التالي",
+    "chooseLanguage": "اختر لغتك",
+    "result": {
+      "youAre": "أنت",
+      "house": "بيتك",
+      "role": "نداؤك الثاني",
+      "quest": "مهمتك الأولى"
+    }
+  },
+  "houses": {
+    "development": "التطوير",
+    "video_editing": "المونتاج",
+    "drawing": "الرسم",
+    "design": "التصميم"
+  },
+  "roles": {
+    "events_management": "تنظيم الفعاليات",
+    "external_relations": "العلاقات الخارجية",
+    "sesc_coffee": "SESC Coffee",
+    "server_management": "إدارة السيرفر",
+    "acting": "التمثيل وأداء وسائل التواصل",
+    "photography": "التصوير الفوتوغرافي"
+  }
 }

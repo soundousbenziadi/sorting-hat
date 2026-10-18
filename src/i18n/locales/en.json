@@ -1,5 +1,33 @@
 {
-  "welcome": "Welcome to the Sorting Hat App",
-  "subtitle": "Discover the house that suits your personality",
-  "start": "Start Your Journey"
+  "hat": {
+    "title": "The SESC Sorting Hat",
+    "subtitle": "Tell the hat about yourself and it will find your place.",
+    "placeholder": "Whisper your answer to the hat…",
+    "send": "Send",
+    "thinking": "The hat is thinking…",
+    "error": "The hat's magic is tired. Please try again.",
+    "retry": "Try again",
+    "next": "Sort the next student",
+    "chooseLanguage": "Choose your language",
+    "result": {
+      "youAre": "You are",
+      "house": "Your house",
+      "role": "Your second calling",
+      "quest": "Your first quest"
+    }
+  },
+  "houses": {
+    "development": "Development",
+    "video_editing": "Video Editing",
+    "drawing": "Drawing",
+    "design": "Design"
+  },
+  "roles": {
+    "events_management": "Events Management",
+    "external_relations": "External Relations",
+    "sesc_coffee": "SESC Coffee",
+    "server_management": "Server Management",
+    "acting": "Acting & Social Media Performance",
+    "photography": "Photography"
+  }
 }

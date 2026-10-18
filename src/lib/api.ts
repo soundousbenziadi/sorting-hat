@@ -3,8 +3,11 @@ import type { HatResponse } from "../types";
 const API_URL = import.meta.env.VITE_HAT_API_URL as string;
 
 export class HatNetworkError extends Error {
-  constructor(public code: string) {
+  code: string;
+
+  constructor(code: string) {
     super(code);
+    this.code = code;
   }
 }
 
@@ -21,7 +24,7 @@ export async function sendToHat(payload: Payload): Promise<HatResponse> {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
-      signal: AbortSignal.timeout(30_000), // Gemini can be slow, don't hang forever
+      signal: AbortSignal.timeout(30_000),
     });
   } catch {
     throw new HatNetworkError("network");
